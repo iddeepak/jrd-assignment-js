@@ -27,10 +27,11 @@ This is a simple ToDo web application that allows users to manage their tasks.
 
 ## How It Works
 
+- Use **username = test** and **password = test** for login.
+
 - When you add a new task, it will appear in the task list.
 - Clicking on the checkbox next to a task will mark it as completed. Completed tasks will be displayed with a strikethrough style.
 - You can edit a task by clicking the "Edit" button next to it. This will open a modal where you can modify the task description.
 - To delete a task, click the "Delete" button next to it.
 - Use the "Show Completed Tasks" button to view only the completed tasks.
 - Use the "Show All Tasks" button to view all tasks, including completed and uncompleted ones.
-
