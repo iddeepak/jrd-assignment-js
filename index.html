@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+    <div id="loginPage" >
+        <div class="container-box">
+            <div style="text-align:center">
+            <h2>Login</h2>
+            </div>
+            <div style="text-align:center;margin:10px;">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+    <div id="app" style="display: none;">
+        <div class="container-box">
+            <h1>Task Manager</h1>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Enter task description">
+                <button onclick="addTask()">Add</button>
+                <button onclick="completedTasks()">Completed Tasks</button>
+                <button onclick="showAllTasks()">Show All Tasks</button>
+            </div>
+        </div>
+        <div id="taskList">
+            <!-- Tasks will be added here dynamically -->
+        </div>
+    </div>
+
+    <!-- Modal for editing task description -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <input type="text" id="editTaskInput" placeholder="Edit task description">
+            <button onclick="saveChanges()">Save</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
